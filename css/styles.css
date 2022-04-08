@@ -1,0 +1,196 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+  height: 100vh;
+
+  background-image: url(/images/background.jpg);
+
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/raleway/raleway-extrabold-webfont.woff2') format('woff2'),
+    url('/fonts/raleway/raleway-extrabold-webfont.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/raleway/raleway-bold-webfont.woff2') format('woff2'),
+    url('/fonts/raleway/raleway-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/raleway/raleway-bolditalic-webfont.woff2') format('woff2'),
+    url('/fonts/raleway/raleway-bolditalic-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/raleway/raleway-semibold-webfont.woff2') format('woff2'),
+    url('/fonts/raleway/raleway-semibold-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/raleway/raleway-semibolditalic-webfont.woff2') format('woff2'),
+    url('/fonts/raleway/raleway-semibolditalic-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/raleway/raleway-medium-webfont.woff2') format('woff2'),
+    url('/fonts/raleway/raleway-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/raleway/raleway-regular-webfont.woff2') format('woff2'),
+    url('/fonts/raleway/raleway-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('/fonts/proxima-nova/proxima-nova-bold-webfont.woff2') format('woff2'),
+    url('/fonts/proxima-nova/proxima-nova-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('/fonts/proxima-nova/proximanova-regular-webfont.woff2') format('woff2'),
+    url('/fonts/proxima-nova/proximanova-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.title {
+  position: absolute;
+  top: 32.5vh;
+  transform: translate(0, -50%);
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.title h1 {
+  font-family: Raleway;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--main-blue);
+  font-size: 3.75rem;
+  letter-spacing: 15px;
+  white-space: pre-line;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+@media (max-width: 912px) {
+  .title {
+  }
+
+  .title h1 {
+    font-size: 6vw;
+    margin-bottom: 0.25rem;
+  }
+
+  .title h2 {
+    font-size: 2.6vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .title h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  .title h2 {
+  }
+}
+
+@media (max-width: 400px) {
+  .title h1 {
+    font-size: 4vw;
+  }
+
+  .title h2 {
+    font-size: 3vw;
+  }
+}
+
+.people-image {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.people-image img {
+  height: 52.5vh;
+}
+
+@media (max-width: 912px) {
+  .people-image img {
+    position: absolute;
+    bottom: 0;
+    height: unset;
+    width: 75vw;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.stars1 img {
+  position: absolute;
+  right: 50px;
+  top: 30px;
+  width: 240px;
+}
+
+.stars2 img {
+  position: absolute;
+  left: 290px;
+  bottom: 145px;
+  width: 240px;
+  z-index: -1;
+}
+
+@media (max-width: 912px) {
+  .stars2 img {
+    display: none;
+  }
+}
