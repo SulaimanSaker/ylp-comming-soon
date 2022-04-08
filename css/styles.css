@@ -10,7 +10,7 @@ body {
 
   height: 100vh;
 
-  background-image: url(/images/background.jpg);
+  background-color: rgb(33, 63, 153);
 
   position: relative;
 }
@@ -119,16 +119,13 @@ p {
 }
 
 @media (max-width: 912px) {
-  .title {
-  }
-
   .title h1 {
     font-size: 6vw;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.35rem;
   }
 
   .title h2 {
-    font-size: 2.6vw;
+    font-size: 3.5vw;
   }
 }
 
@@ -136,18 +133,15 @@ p {
   .title h1 {
     margin-bottom: 0.5rem;
   }
-
-  .title h2 {
-  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .title h1 {
-    font-size: 4vw;
+    font-size: 6vw;
   }
 
   .title h2 {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }
 
@@ -171,6 +165,12 @@ p {
     width: 75vw;
     left: 50%;
     transform: translate(-50%);
+  }
+}
+
+@media (max-width: 500px) {
+  .people-image img {
+    width: 90vw;
   }
 }
 
